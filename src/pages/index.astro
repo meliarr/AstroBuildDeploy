@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+import Base from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
+import { Markdown } from 'astro/components'
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bakery Corner</title>
-</head>
+<Base title="Corner Bakery">
+<h1>Corner Bakery</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quis voluptatibus, cum sequi, quasi alias nemo quam odit dicta nisi minima, consequatur itaque sit corrupti distinctio harum ducimus facere?</p>
+<img src="/images/recipe-donuts.jpg" alt="Close-up photo of donut with sprinkles" class="main-image">
+<Card title="Ingredients" href="/">
+    <ul>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </li>
+        <li>Recusandae impedit praesentium fuga voluptatibus dolorem facere facilis? </li>
+        <li>Quos tenetur, ducimus ad facilis voluptates maxime eligendi, saepe suscipit labore ipsam veritatis possimus.</li>
+    </ul>
+</Card>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quis voluptatibus, cum sequi, quasi alias nemo quam odit dicta nisi minima, consequatur itaque sit corrupti distinctio harum ducimus facere?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quis voluptatibus, cum sequi, quasi alias nemo quam odit dicta nisi minima, consequatur itaque sit corrupti distinctio harum ducimus facere?</p>
+<Markdown>
+    ## Write some markdown here
 
-<body>
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quis voluptatibus, cum sequi, quasi alias nemo quam odit dicta nisi minima, consequatur itaque sit corrupti distinctio harum ducimus facere?</p>
-    <img src="/images/recipe-donuts.jpg" alt="Close-up photo of donut with sprinkles">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quis voluptatibus, cum sequi, quasi alias nemo quam odit dicta nisi minima, consequatur itaque sit corrupti distinctio harum ducimus facere?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quis voluptatibus, cum sequi, quasi alias nemo quam odit dicta nisi minima, consequatur itaque sit corrupti distinctio harum ducimus facere?</p>
-    <div>Include Bottom Links</div>
-    <a href="/about">About Page</a>
-</body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat fugit dignissimos cumque nihil neque odit, sit et quasi non quia quae earum ea beatae laboriosam adipisci magni commodi illo!
 
-</html>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat fugit dignissimos cumque nihil neque odit, sit et quasi non quia quae earum ea beatae laboriosam adipisci magni commodi illo!
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam placeat fugit dignissimos cumque nihil neque odit, sit et quasi non quia quae earum ea beatae laboriosam adipisci magni commodi illo!
+</Markdown>
+<div>Include Bottom Links</div>
+<a href="/about">About Page</a>
+</Base>
